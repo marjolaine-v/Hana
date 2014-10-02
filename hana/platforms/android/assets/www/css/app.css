@@ -1,0 +1,191 @@
+@font-face {
+  font-family: 'bebasregular';
+  src: url('../fonts/bebas__-webfont.eot');
+  src: url('../fonts/bebas__-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/bebas__-webfont.woff2') format('woff2'), url('../fonts/bebas__-webfont.woff') format('woff'), url('../fonts/bebas__-webfont.ttf') format('truetype'), url('../fonts/bebas__-webfont.svg#bebasregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  background-color: #e2e2e2;
+}
+body #wrapper {
+  margin: 10px;
+  padding: 0;
+  background-color: #fcfdff;
+}
+body #wrapper header {
+  transition: all 0.5s ease;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+body #wrapper header.blue {
+  background-color: #1751a3;
+}
+body #wrapper header.green {
+  background-color: #7dbd2b;
+}
+body #wrapper header h1 {
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  line-height: 58px;
+  color: #fcfdff;
+  text-transform: uppercase;
+  font-family: 'bebasregular';
+  letter-spacing: 20px;
+}
+body #wrapper #main {
+  font-family: arial, sans-serif;
+}
+body #wrapper #main #round {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  box-sizing: border-box;
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  height: 400px;
+  margin: 20px auto;
+}
+body #wrapper #main #round .round-top {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+body #wrapper #main #round .round-top .shadow {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.7);
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 90;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+}
+body #wrapper #main #round #content,
+body #wrapper #main #round #plant {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+body #wrapper #main #round #content {
+  top: 0;
+  border: 18px solid #1751a3;
+  background-color: #fcfdff;
+  text-align: center;
+}
+body #wrapper #main #round #content .content {
+  position: relative;
+  width: 100%;
+}
+body #wrapper #main #round #content .content .temp {
+  position: absolute;
+  display: block;
+  top: 30px;
+  width: 100%;
+  font-family: 'bebasregular';
+  font-size: 80pt;
+  color: #494949;
+}
+body #wrapper #main #round #content .content .hour-minute {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  font-family: 'bebasregular';
+  font-size: 10pt;
+  letter-spacing: 5px;
+  color: #acacac;
+}
+body #wrapper #main #round #content .content .hour-minute span {
+  display: inline-block;
+  vertical-align: top;
+  height: 50px;
+  margin: 0 8px;
+  line-height: 65px;
+}
+body #wrapper #main #round #content .content .hour-minute span.hour,
+body #wrapper #main #round #content .content .hour-minute span.minute {
+  letter-spacing: 0;
+  font-size: 26pt;
+}
+body #wrapper #main #round #plant {
+  z-index: 80;
+  bottom: 0;
+  overflow: hidden;
+  border: 18px solid #7dbd2b;
+  background-image: url('../img/plant.jpg');
+  background-size: cover;
+}
+body #wrapper #main #round #plant #warning {
+  transition: all 0.5s ease;
+  opacity: 0;
+  height: 100%;
+  padding-top: 80px;
+  background-color: rgba(225, 47, 47, 0.7);
+  text-align: center;
+}
+body #wrapper #main #round #plant #warning button {
+  transition: all 0.5s ease;
+  opacity: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  color: #fcfdff;
+  font-size: 20pt;
+  font-family: 'bebasregular';
+  text-transform: uppercase;
+  background: none;
+}
+body #wrapper #main #round #plant #warning.on {
+  opacity: 1;
+  padding-top: 0;
+}
+body #wrapper #main #round #plant #warning.on button {
+  opacity: 1;
+}
+body #wrapper #main .infos table {
+  width: 90%;
+  margin: 0 auto 10px;
+}
+body #wrapper #main .infos table td {
+  vertical-align: top;
+}
+body #wrapper #main .infos table td h2 {
+  width: 65%;
+  font-size: 9pt;
+  color: #acacac;
+  text-transform: uppercase;
+}
+body #wrapper #main .infos table td span {
+  font-size: 16pt;
+  color: #494949;
+  text-transform: uppercase;
+}
+body #wrapper #main .infos table td.warning span {
+  color: #e12f2f;
+}
+body #wrapper footer {
+  transition: all 0.5s ease;
+  height: 10px;
+  margin: 0;
+  padding: 0;
+}
+body #wrapper footer.blue {
+  background-color: #1751a3;
+}
+body #wrapper footer.green {
+  background-color: #7dbd2b;
+}
