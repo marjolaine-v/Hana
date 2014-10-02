@@ -95,7 +95,7 @@ var FacesDetection = function() {
             self.snapshot();
             self.facesDetector();
 
-            self.socket.emit("face-detected", self.getFacesCount());
+            self.socket.emit("faceDetected", self.getFacesCount());
         }
 
         requestAnimationFrame(self.updateCamera);

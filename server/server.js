@@ -103,7 +103,8 @@ var App = {
 				    '<canvas id="cam-render" width="640" height="480"></canvas>' + 
 				    '<video  id="video" width="640" height="480"></video>' + 
 				'</body>' + 
-				'<script data-main="http://localhost/gobelins/Hana/src/main" src="http://localhost/gobelins/Hana/libs/require/require.js"></script>' + 
+				'<script src="http://localhost/socket.io/socket.io.js"></script>' + 
+				'<script data-main="http://localhost/gobelins/Hana/server/src/main" src="http://localhost/gobelins/Hana/server/libs/require/require.js"></script>' + 
 				'</html>'
 			);
 		});
@@ -131,7 +132,7 @@ var App = {
 		this.socket.on('disconnect', this.socketDisconnect.bind(this));
 
 		// Lance le socket quand un User se connecte
-		this.io.on('face-detected', this.faceDetected.bind(this));
+		this.socket.on('faceDetected', this.faceDetected.bind(this));
 
 		// // On écoute nos événements
 		// this.socket.on('btn-add-water', this.btnAddWater.bind(this));
