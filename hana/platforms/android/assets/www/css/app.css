@@ -30,7 +30,7 @@ body #wrapper header h1 {
   height: 50px;
   margin: 0;
   padding: 0;
-  line-height: 58px;
+  line-height: 50px;
   color: #fcfdff;
   text-transform: uppercase;
   font-family: 'bebasregular';
@@ -94,7 +94,7 @@ body #wrapper #main #round #content .content {
 body #wrapper #main #round #content .content .temp {
   position: absolute;
   display: block;
-  top: 30px;
+  top: 10px;
   width: 100%;
   font-family: 'bebasregular';
   font-size: 80pt;
@@ -112,9 +112,9 @@ body #wrapper #main #round #content .content .hour-minute {
 body #wrapper #main #round #content .content .hour-minute span {
   display: inline-block;
   vertical-align: top;
-  height: 50px;
+  height: 35px;
   margin: 0 8px;
-  line-height: 65px;
+  line-height: 35px;
 }
 body #wrapper #main #round #content .content .hour-minute span.hour,
 body #wrapper #main #round #content .content .hour-minute span.minute {
@@ -128,6 +128,11 @@ body #wrapper #main #round #plant {
   border: 18px solid #7dbd2b;
   background-image: url('../img/plant.jpg');
   background-size: cover;
+}
+body #wrapper #main #round #plant .coloration {
+  width: 100%;
+  height: 100%;
+  background: rgba(100, 169, 100, 0.4);
 }
 body #wrapper #main #round #plant #warning {
   transition: all 0.5s ease;

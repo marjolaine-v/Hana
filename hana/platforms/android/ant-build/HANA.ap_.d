@@ -30,8 +30,11 @@ c:\wamp\www\gobelins\Hana\hana\platforms\android\assets\www\fonts\bebas__-webfon
 c:\wamp\www\gobelins\Hana\hana\platforms\android\assets\www\img\plant.jpg \
 c:\wamp\www\gobelins\Hana\hana\platforms\android\assets\www\js\index.js \
 c:\wamp\www\gobelins\Hana\hana\platforms\android\assets\www\js\libs \
+c:\wamp\www\gobelins\Hana\hana\platforms\android\assets\www\js\socket.io \
+c:\wamp\www\gobelins\Hana\hana\platforms\android\assets\www\js\libs\hammer.min.js \
 c:\wamp\www\gobelins\Hana\hana\platforms\android\assets\www\js\libs\html5shiv.js \
 c:\wamp\www\gobelins\Hana\hana\platforms\android\assets\www\js\libs\jquery-1.11.1.min.js \
+c:\wamp\www\gobelins\Hana\hana\platforms\android\assets\www\js\socket.io\socket.io.js \
 c:\wamp\www\gobelins\Hana\hana\platforms\android\assets\www\less\app.less \
 c:\wamp\www\gobelins\Hana\hana\platforms\android\assets\www\less\colors.less \
 c:\wamp\www\gobelins\Hana\hana\platforms\android\assets\www\less\fonts.less \

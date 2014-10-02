@@ -30,9 +30,8 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
-
-        document.addEventListener('deviceready', this.onDeviceReady, false);
-        this.onDeviceReady();
+        document.addEventListener('deviceready', this.onDeviceReady(), false);
+        // this.onDeviceReady();
     },
     // deviceready Event Handler
     //
@@ -40,9 +39,11 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
 
-        this.initApp();
+        var that = this;
+        that.initApp();
 
-        this.socket = io("http://localhost:3000");
+        // Socket io
+        this.socket = io("http://192.168.31.39:3000");
         this.socket.on("connect_error", function(error){
             console.log("Error", error);
         });
@@ -50,14 +51,14 @@ var app = {
         this.socket.on("connect", function() {
             console.log("Connected");
         });
-        var that = this;
 
-        /** Time **/
-        setInterval( function() {
-            var date = new Date();
-            $('.hour').html(date.getHours());
-            $('.minute').html(date.getMinutes());
-        },1000);
+
+        this.socket.on('plant', function (data) {
+            $('.infos #water span').html(data.lastWatering);
+            $('.infos #humidity span').html(data.dayState.humidity);
+            $('.infos #luminosity span').html(data.dayState.luminosity);
+            $('.infos #temperature span').html(data.dayState.temperature);
+        });
 
 
         /** Navigation **/
@@ -73,27 +74,14 @@ var app = {
 
 
 
-        /** Demo alert **/
-        $('#water h2').on('click', function(e) {
-            e.preventDefault();
-            that.warningElement('water');
-        });
+        // /** CLIC ON THE ALERT **/
+        // $("#warning").on("click", function(){
 
-        $('#luminosity h2').on('click', function(e) {
-            e.preventDefault();
-            that.warningElement('luminosity');
-        });
-
-
-
-        /** CLIC ON THE ALERT **/
-        $("#warning").on("click", function(){
-
-            if($(this).hasClass('water')) {
-                console.log("ADD WATER (HTML)");
-                that.socket.emit("btn-add-water");
-            }
-        });
+        //     if($(this).hasClass('water')) {
+        //         console.log("ADD WATER (HTML)");
+        //         that.socket.emit("btn-add-water");
+        //     }
+        // });
     },
 
 
@@ -113,6 +101,7 @@ var app = {
         $('.height-js-bordered').height($('.height-js-bordered').width());
 
         this.margins = this.getMargins();
+        console.log(this.margins);
         $('#main').css('marginTop', this.margins);
         $('#main').css('marginBottom', this.margins);
 
@@ -125,7 +114,7 @@ var app = {
 
 
     getMargins: function() {
-        return (($(document).height() - $('header').height() - $('footer').height() - 20) / 2) - ($('#round').height() / 2);
+        return (($(window).height() - $('header').height() - $('footer').height() - 20) / 2) - ($('#round').height() / 2);
     },
 
     switchToPlant: function() {
@@ -146,6 +135,7 @@ var app = {
             $('footer').removeClass('blue').addClass('green');
             $('.shadow').hide();
         });
+        $('#plant .coloration').fadeOut(1000);
         $('#plant').stop().animate({
             borderWidth: '4px'
         }, 1000, function() {
@@ -157,6 +147,7 @@ var app = {
         $('#wrapper').removeClass('plant');
         $('.shadow').show();
         $('.infos').slideUp(1000);
+        $('#plant .coloration').fadeIn(1000);
         $('#main').stop().animate({
             marginTop: m,
             marginBottom: m
@@ -177,16 +168,29 @@ var app = {
     },
 
 
-    warningElement: function(type) {
-        switch(type) {
-            case 'water':
-                $('#warning').addClass('water').addClass('on').find('button').html('Arroser');
-                $('#water').addClass('warning');
-                break;
-            case 'luminosity':
-                $('#warning').addClass('on').find('button').html('Eclairer');
-                $('#luminosity').addClass('warning');
-                break;
-        }
-    }
+    // warningElement: function(type) {
+    //     switch(type) {
+    //         case 'water':
+    //             $('#warning').addClass('water').addClass('on').find('button').html('Arroser');
+    //             $('#water').addClass('warning');
+    //             break;
+    //         case 'luminosity':
+    //             $('#warning').addClass('on').find('button').html('Eclairer');
+    //             $('#luminosity').addClass('warning');
+    //             break;
+    //     }
+    // }
 };
+$(document).ready(function() {
+    app.initialize();
+
+    var date = new Date();
+
+
+    /** Time **/
+    setInterval(function() {
+        date = new Date();
+        $('.hour').html(date.getHours());
+        $('.minute').html(date.getMinutes());
+    },1000);
+});
