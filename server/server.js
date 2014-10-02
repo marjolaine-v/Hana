@@ -3,6 +3,7 @@ var App = {
 	// Jonnhy five
 	five: require("johnny-five"),
 
+
 	// Express + Http pour créer le serveur node
 	express: require('express')(),
 	http : null,
@@ -92,7 +93,19 @@ var App = {
 		// Routage : envoie le html sur http://localhost:3000
 		// A remplacer par sendFile('path_to_/index.html)
 		this.express.get('/', function(req, res){
-			res.sendFile('/wamp/www/tests/nodejs-arduino/add-water.html');
+			res.send('<!DOCTYPE html>' +
+				'<html>' + 
+				'<head lang="en">' + 
+				    '<meta charset="UTF-8">' + 
+				    '<title>Hana Cam Test</title>' + 
+				'</head>' + 
+				'<body>' + 
+				    '<canvas id="cam-render" width="640" height="480"></canvas>' + 
+				    '<video  id="video" width="640" height="480"></video>' + 
+				'</body>' + 
+				'<script data-main="http://localhost/gobelins/Hana/src/main" src="http://localhost/gobelins/Hana/libs/require/require.js"></script>' + 
+				'</html>'
+			);
 		});
 
 		// Port 3000
@@ -117,6 +130,9 @@ var App = {
 		// Deconnexion
 		this.socket.on('disconnect', this.socketDisconnect.bind(this));
 
+		// Lance le socket quand un User se connecte
+		this.io.on('face-detected', this.faceDetected.bind(this));
+
 		// // On écoute nos événements
 		// this.socket.on('btn-add-water', this.btnAddWater.bind(this));
 	},
@@ -126,9 +142,13 @@ var App = {
 		console.log('User disconnected');
 	},
 
-	// /**************
-	//  * Soket
-	//  *************/
+	/**************
+	 * Soket
+	 *************/
+
+	faceDetected : function(el) {
+		console.log(el);
+	},
 
 	// btnAddWater : function(){
 
