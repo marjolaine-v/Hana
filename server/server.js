@@ -15,7 +15,10 @@ var App = {
 	board: null,
 
 	// Arduino components
-	led: null,
+	redLed: null,
+	greenLed: null,
+	waterLed: null,
+	motor: null,
 
 	// Socket
 	socket : null,
@@ -197,14 +200,36 @@ var App = {
 
 		// Créer les composants Arduino
 		this.redLed = new this.five.Led({
-			pin: 6
+			pin: 9
 		});
 		this.greenLed = new this.five.Led({
-			pin: 3
+			pin: 10
 		});
 		this.waterLed = new this.five.Led({
 			pin: 11
 		});
+		this.motor = new this.five.Motor({
+			pin: 3
+		});
+
+		this.board.repl.inject({
+			motor: this.motor
+		});
+
+		var self = this;
+
+		self.motor.on("start", function(err, timestamp) {
+			console.log("start", timestamp);
+
+			// Demonstrate motor stop in 2 seconds
+			self.board.wait(2000, function() {
+				self.motor.stop();
+			});
+		});
+
+		this.motor.start();
+
+		
 
 		// Set dayState
 		this.plant.dayState = this.getDayState();
@@ -231,6 +256,7 @@ var App = {
 	},
 
 	setLeds: function(type, value) {
+		this.motor.start();
 		switch(type) {
 			case 'humidity':
 				this.waterLed.on();
