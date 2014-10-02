@@ -19,6 +19,7 @@
 var app = {
     shadowHeight: null,
     margins: null,
+    socket: null,
 
     // Application Constructor
     initialize: function() {
@@ -40,6 +41,15 @@ var app = {
     onDeviceReady: function() {
 
         this.initApp();
+
+        this.socket = io("http://localhost:3000");
+        this.socket.on("connect_error", function(error){
+            console.log("Error", error);
+        });
+
+        this.socket.on("connect", function() {
+            console.log("Connected");
+        });
         var that = this;
 
         /** Time **/
@@ -81,7 +91,7 @@ var app = {
 
             if($(this).hasClass('water')) {
                 console.log("ADD WATER (HTML)");
-                socket.emit("btn-add-water");
+                that.socket.emit("btn-add-water");
             }
         });
     },

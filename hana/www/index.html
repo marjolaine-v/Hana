@@ -68,16 +68,5 @@
 	<script type="text/javascript">
 		app.initialize();
 	</script>
-	<script>
-		var socket = io("http://localhost:3000");
-
-		socket.on("connect_error", function(error){
-			console.log("Error", error);
-		});
-
-		socket.on("connect", function() {
-			console.log("Connected");
-		});
-	</script>
 </body>
 </html>
