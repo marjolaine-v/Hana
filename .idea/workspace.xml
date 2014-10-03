@@ -1,7 +1,704 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27bf7581-cddd-47e5-8f18-c74d9b8d16f3" name="Default" comment="" />
+    <list default="true" id="8ec09124-648d-4871-9ad2-fb6a9bfd2b57" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/Hana.iml" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\.idea\libraries\classes.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\.idea\libraries\classes_0163275341bd078d5c4a87ff86849fe4.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\hana\www\js\socket.io\socket.io.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\libs\socket.io\socket.io.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\lib\client.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\lib\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\lib\namespace.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\lib\socket.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\debug\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\debug\debug.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\debug\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\debug\lib\debug.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\debug\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\lib\engine.io.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\lib\server.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\lib\socket.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\lib\transport.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\lib\transports\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\lib\transports\polling-jsonp.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\lib\transports\polling-xhr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\lib\transports\polling.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\lib\transports\websocket.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\.bin\wscat" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\.bin\wscat.cmd" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\base64id\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\base64id\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\base64id\lib\base64id.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\base64id\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\debug\.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\debug\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\debug\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\debug\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\debug\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\debug\browser.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\debug\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\debug\debug.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\debug\node.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\debug\node_modules\ms\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\debug\node_modules\ms\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\debug\node_modules\ms\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\debug\node_modules\ms\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\debug\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\.zuul.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\lib\browser.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\lib\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\lib\keys.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\after\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\after\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\after\LICENCE" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\after\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\after\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\after\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\after\test\after-test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\arraybuffer.slice\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\arraybuffer.slice\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\arraybuffer.slice\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\arraybuffer.slice\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\arraybuffer.slice\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\arraybuffer.slice\test\slice-buffer.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\base64-arraybuffer\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\base64-arraybuffer\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\base64-arraybuffer\LICENSE-MIT" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\base64-arraybuffer\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\base64-arraybuffer\grunt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\base64-arraybuffer\lib\base64-arraybuffer.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\base64-arraybuffer\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\base64-arraybuffer\test\base64-arraybuffer_test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\blob\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\blob\.zuul.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\blob\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\blob\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\blob\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\blob\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\blob\test\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\utf8\.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\utf8\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\utf8\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\utf8\Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\utf8\LICENSE-GPL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\utf8\LICENSE-MIT.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\utf8\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\utf8\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\utf8\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\utf8\coverage\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\utf8\coverage\prettify.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\utf8\coverage\prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\utf8\coverage\utf8.js\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\utf8\coverage\utf8.js\utf8.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\utf8\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\utf8\tests\generate-test-data.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\utf8\tests\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\utf8\tests\tests.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\utf8\utf8.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\utf8\x.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\bench\parser.benchmark.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\bench\sender.benchmark.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\bench\speed.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\bench\util.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\bin\wscat" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\binding.gyp" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\builderror.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\doc\ws.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\examples\fileapi\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\examples\fileapi\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\examples\fileapi\public\app.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\examples\fileapi\public\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\examples\fileapi\public\uploader.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\examples\fileapi\server.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\examples\serverstats-express_3\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\examples\serverstats-express_3\public\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\examples\serverstats-express_3\server.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\examples\serverstats\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\examples\serverstats\public\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\examples\serverstats\server.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\examples\ssl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\lib\BufferPool.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\lib\BufferUtil.fallback.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\lib\BufferUtil.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\lib\ErrorCodes.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\lib\Receiver.hixie.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\lib\Receiver.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\lib\Sender.hixie.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\lib\Sender.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\lib\Validation.fallback.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\lib\Validation.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\lib\WebSocket.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\lib\WebSocketServer.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\lib\browser.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\commander\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\commander\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\commander\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\commander\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\commander\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\commander\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\commander\lib\commander.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\commander\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\nan\.index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\nan\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\nan\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\nan\nan.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\nan\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\options\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\options\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\options\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\options\lib\options.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\options\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\options\test\fixtures\test.conf" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\options\test\options.test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\tinycolor\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\tinycolor\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\tinycolor\example.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\tinycolor\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\tinycolor\tinycolor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\src\bufferutil.cc" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\src\validation.cc" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\BufferPool.test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\Receiver.hixie.test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\Receiver.test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\Sender.hixie.test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\Sender.test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\Validation.test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\WebSocket.integration.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\WebSocket.test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\WebSocketServer.test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\autobahn-server.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\autobahn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\fixtures\agent1-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\fixtures\agent1-key.pem" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\fixtures\ca1-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\fixtures\ca1-key.pem" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\fixtures\certificate.pem" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\fixtures\key.pem" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\fixtures\request.pem" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\fixtures\textfile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\hybi-common.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\testserver.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\engine.io\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\has-binary-data\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\has-binary-data\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\has-binary-data\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\has-binary-data\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\has-binary-data\fixtures\big.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\has-binary-data\gen.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\has-binary-data\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\has-binary-data\node_modules\isarray\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\has-binary-data\node_modules\isarray\build\build.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\has-binary-data\node_modules\isarray\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\has-binary-data\node_modules\isarray\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\has-binary-data\node_modules\isarray\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\has-binary-data\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\has-binary-data\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\.zuul.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\binary.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\node_modules\emitter\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\node_modules\emitter\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\node_modules\emitter\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\node_modules\emitter\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\node_modules\emitter\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\node_modules\emitter\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\node_modules\emitter\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\node_modules\emitter\test\emitter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\node_modules\isarray\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\node_modules\isarray\build\build.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\node_modules\isarray\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\node_modules\isarray\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\node_modules\isarray\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\node_modules\json3\.gitmodules" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\node_modules\json3\.jamignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\node_modules\json3\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\node_modules\json3\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\node_modules\json3\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\node_modules\json3\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\node_modules\json3\coverage\coverage.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\node_modules\json3\coverage\lcov-report\lib\json3.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\node_modules\json3\coverage\lcov-report\prettify.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\node_modules\json3\coverage\lcov-report\prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\node_modules\json3\coverage\lcov.info" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\node_modules\json3\lib\json3.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\node_modules\json3\lib\json3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\node_modules\json3\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\socket.io-parser\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-adapter\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\.zuul.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\lib\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\lib\manager.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\lib\on.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\lib\socket.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\lib\url.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\component-bind\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\component-bind\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\component-bind\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\component-bind\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\component-bind\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\component-bind\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\component-bind\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\component-emitter\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\component-emitter\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\component-emitter\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\component-emitter\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\component-emitter\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\component-emitter\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\component-emitter\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\component-emitter\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\component-emitter\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\.zuul.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\engine.io.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\lib\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\lib\socket.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\lib\transport.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\lib\transports\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\lib\transports\polling-jsonp.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\lib\transports\polling-xhr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\lib\transports\polling.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\lib\transports\websocket.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\lib\xmlhttprequest.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\.bin\wscat" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\.bin\wscat.cmd" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\component-inherit\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\component-inherit\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\component-inherit\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\component-inherit\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\component-inherit\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\component-inherit\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\component-inherit\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\component-inherit\test\inherit.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\.zuul.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\lib\browser.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\lib\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\lib\keys.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\after\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\after\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\after\LICENCE" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\after\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\after\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\after\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\after\test\after-test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\arraybuffer.slice\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\arraybuffer.slice\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\arraybuffer.slice\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\arraybuffer.slice\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\arraybuffer.slice\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\arraybuffer.slice\test\slice-buffer.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\base64-arraybuffer\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\base64-arraybuffer\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\base64-arraybuffer\LICENSE-MIT" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\base64-arraybuffer\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\base64-arraybuffer\grunt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\base64-arraybuffer\lib\base64-arraybuffer.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\base64-arraybuffer\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\base64-arraybuffer\test\base64-arraybuffer_test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\blob\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\blob\.zuul.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\blob\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\blob\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\blob\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\blob\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\blob\test\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\utf8\.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\utf8\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\utf8\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\utf8\Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\utf8\LICENSE-GPL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\utf8\LICENSE-MIT.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\utf8\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\utf8\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\utf8\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\utf8\coverage\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\utf8\coverage\prettify.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\utf8\coverage\prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\utf8\coverage\utf8.js\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\utf8\coverage\utf8.js\utf8.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\utf8\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\utf8\tests\generate-test-data.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\utf8\tests\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\utf8\tests\tests.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\utf8\utf8.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\utf8\x.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\has-cors\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\has-cors\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\has-cors\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\has-cors\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\has-cors\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\has-cors\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\has-cors\node_modules\global\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\has-cors\node_modules\global\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\has-cors\node_modules\global\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\has-cors\node_modules\global\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\has-cors\node_modules\global\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\has-cors\node_modules\global\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\has-cors\node_modules\global\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\has-cors\node_modules\global\test\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\has-cors\node_modules\global\test\mocha.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\has-cors\node_modules\global\test\mocha.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\has-cors\node_modules\global\test\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\has-cors\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parsejson\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parsejson\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parsejson\node_modules\better-assert\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parsejson\node_modules\better-assert\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parsejson\node_modules\better-assert\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parsejson\node_modules\better-assert\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parsejson\node_modules\better-assert\example.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parsejson\node_modules\better-assert\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parsejson\node_modules\better-assert\node_modules\callsite\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parsejson\node_modules\better-assert\node_modules\callsite\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parsejson\node_modules\better-assert\node_modules\callsite\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parsejson\node_modules\better-assert\node_modules\callsite\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parsejson\node_modules\better-assert\node_modules\callsite\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parsejson\node_modules\better-assert\node_modules\callsite\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parsejson\node_modules\better-assert\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parsejson\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parsejson\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseqs\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseqs\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseqs\node_modules\better-assert\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseqs\node_modules\better-assert\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseqs\node_modules\better-assert\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseqs\node_modules\better-assert\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseqs\node_modules\better-assert\example.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseqs\node_modules\better-assert\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseqs\node_modules\better-assert\node_modules\callsite\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseqs\node_modules\better-assert\node_modules\callsite\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseqs\node_modules\better-assert\node_modules\callsite\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseqs\node_modules\better-assert\node_modules\callsite\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseqs\node_modules\better-assert\node_modules\callsite\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseqs\node_modules\better-assert\node_modules\callsite\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseqs\node_modules\better-assert\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseqs\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseqs\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseuri\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseuri\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseuri\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseuri\node_modules\better-assert\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseuri\node_modules\better-assert\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseuri\node_modules\better-assert\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseuri\node_modules\better-assert\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseuri\node_modules\better-assert\example.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseuri\node_modules\better-assert\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseuri\node_modules\better-assert\node_modules\callsite\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseuri\node_modules\better-assert\node_modules\callsite\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseuri\node_modules\better-assert\node_modules\callsite\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseuri\node_modules\better-assert\node_modules\callsite\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseuri\node_modules\better-assert\node_modules\callsite\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseuri\node_modules\better-assert\node_modules\callsite\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseuri\node_modules\better-assert\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseuri\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseuri\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\bench\parser.benchmark.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\bench\sender.benchmark.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\bench\speed.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\bench\util.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\bin\wscat" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\binding.gyp" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\builderror.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\doc\ws.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\examples\fileapi\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\examples\fileapi\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\examples\fileapi\public\app.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\examples\fileapi\public\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\examples\fileapi\public\uploader.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\examples\fileapi\server.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\examples\serverstats-express_3\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\examples\serverstats-express_3\public\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\examples\serverstats-express_3\server.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\examples\serverstats\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\examples\serverstats\public\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\examples\serverstats\server.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\examples\ssl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\lib\BufferPool.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\lib\BufferUtil.fallback.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\lib\BufferUtil.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\lib\ErrorCodes.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\lib\Receiver.hixie.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\lib\Receiver.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\lib\Sender.hixie.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\lib\Sender.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\lib\Validation.fallback.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\lib\Validation.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\lib\WebSocket.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\lib\WebSocketServer.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\lib\browser.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\commander\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\commander\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\commander\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\commander\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\commander\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\commander\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\commander\lib\commander.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\commander\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\nan\.index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\nan\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\nan\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\nan\nan.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\nan\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\options\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\options\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\options\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\options\lib\options.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\options\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\options\test\fixtures\test.conf" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\options\test\options.test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\tinycolor\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\tinycolor\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\tinycolor\example.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\tinycolor\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\tinycolor\tinycolor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\src\bufferutil.cc" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\src\validation.cc" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\BufferPool.test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\Receiver.hixie.test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\Receiver.test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\Sender.hixie.test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\Sender.test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\Validation.test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\WebSocket.integration.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\WebSocket.test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\WebSocketServer.test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\autobahn-server.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\autobahn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\fixtures\agent1-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\fixtures\agent1-key.pem" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\fixtures\ca1-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\fixtures\ca1-key.pem" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\fixtures\certificate.pem" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\fixtures\key.pem" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\fixtures\request.pem" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\fixtures\textfile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\hybi-common.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\testserver.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\autotest.watchr" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\example\demo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\lib\XMLHttpRequest.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\tests\test-constants.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\tests\test-events.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\tests\test-exceptions.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\tests\test-headers.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\tests\test-redirect-302.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\tests\test-redirect-303.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\tests\test-redirect-307.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\tests\test-request-methods.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\tests\test-request-protocols.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\tests\testdata.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\has-binary\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\has-binary\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\has-binary\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\has-binary\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\has-binary\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\has-binary\fixtures\big.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\has-binary\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\has-binary\node_modules\isarray\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\has-binary\node_modules\isarray\build\build.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\has-binary\node_modules\isarray\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\has-binary\node_modules\isarray\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\has-binary\node_modules\isarray\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\has-binary\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\has-binary\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\indexof\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\indexof\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\indexof\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\indexof\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\indexof\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\indexof\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\object-component\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\object-component\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\object-component\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\object-component\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\object-component\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\object-component\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\object-component\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\object-component\test\object.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\parseuri\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\parseuri\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\parseuri\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\parseuri\node_modules\better-assert\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\parseuri\node_modules\better-assert\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\parseuri\node_modules\better-assert\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\parseuri\node_modules\better-assert\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\parseuri\node_modules\better-assert\example.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\parseuri\node_modules\better-assert\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\parseuri\node_modules\better-assert\node_modules\callsite\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\parseuri\node_modules\better-assert\node_modules\callsite\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\parseuri\node_modules\better-assert\node_modules\callsite\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\parseuri\node_modules\better-assert\node_modules\callsite\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\parseuri\node_modules\better-assert\node_modules\callsite\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\parseuri\node_modules\better-assert\node_modules\callsite\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\parseuri\node_modules\better-assert\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\parseuri\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\parseuri\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\.zuul.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\bench\bench.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\bench\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\binary.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\is-buffer.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\node_modules\benchmark\LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\node_modules\benchmark\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\node_modules\benchmark\benchmark.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\node_modules\benchmark\doc\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\node_modules\benchmark\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\node_modules\benchmark\test\run-test.sh" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\node_modules\benchmark\test\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\node_modules\isarray\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\node_modules\isarray\build\build.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\node_modules\isarray\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\node_modules\isarray\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\node_modules\isarray\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\node_modules\json3\.gitmodules" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\node_modules\json3\.jamignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\node_modules\json3\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\node_modules\json3\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\node_modules\json3\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\node_modules\json3\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\node_modules\json3\coverage\coverage.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\node_modules\json3\coverage\lcov-report\lib\json3.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\node_modules\json3\coverage\lcov-report\prettify.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\node_modules\json3\coverage\lcov-report\prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\node_modules\json3\coverage\lcov.info" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\node_modules\json3\lib\json3.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\node_modules\json3\lib\json3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\node_modules\json3\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\socket.io-parser\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\to-array\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\to-array\LICENCE" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\to-array\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\to-array\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\node_modules\to-array\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-client\socket.io.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\.zuul.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\bench\bench.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\bench\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\binary.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\benchmark\LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\benchmark\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\benchmark\benchmark.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\benchmark\doc\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\benchmark\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\benchmark\test\run-test.sh" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\benchmark\test\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\component-emitter\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\component-emitter\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\component-emitter\History.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\component-emitter\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\component-emitter\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\component-emitter\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\component-emitter\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\component-emitter\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\component-emitter\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\isarray\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\isarray\build\build.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\isarray\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\isarray\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\isarray\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\json3\.gitmodules" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\json3\.jamignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\json3\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\json3\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\json3\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\json3\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\json3\coverage\coverage.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\json3\coverage\lcov-report\lib\json3.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\json3\coverage\lcov-report\prettify.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\json3\coverage\lcov-report\prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\json3\coverage\lcov.info" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\json3\lib\json3.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\json3\lib\json3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\node_modules\json3\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\node_modules\socket.io-parser\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Hana\server\node_modules\socket.io\package.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Hana.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,12 +751,34 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties converted="true" />
     <breakpoint_rules converted="true" />
+    <ui_properties converted="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="Hana" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="server.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.59012014" vertical-offset="0" max-vertical-offset="4403">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -76,7 +795,7 @@
     <OptionsSetting value="true" id="Edit" />
     <OptionsSetting value="true" id="Undo Check Out" />
     <OptionsSetting value="true" id="Get Latest Version" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -95,8 +814,9 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -105,8 +825,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Hana" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Hana" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Hana" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Hana" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Hana" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Hana" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -120,11 +883,10 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Android Application.android">
+  <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -216,75 +978,29 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="false" name="android" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="android" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Android Application.android" />
-    </list>
+    <list size="0" />
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" myUseAcceleration="nothing">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="27bf7581-cddd-47e5-8f18-c74d9b8d16f3" name="Default" comment="" />
-      <created>1412234296569</created>
-      <updated>1412234296569</updated>
-      <workItem from="1412234298892" duration="232000" />
-      <workItem from="1412234662964" duration="5000" />
-      <workItem from="1412234695672" duration="64000" />
+      <changelist id="8ec09124-648d-4871-9ad2-fb6a9bfd2b57" name="Default" comment="" />
+      <created>1412327324601</created>
+      <updated>1412327324601</updated>
+      <workItem from="1412327326449" duration="51000" />
+      <workItem from="1412327379257" duration="529000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="301000" />
+    <option name="totallyTimeSpent" value="580000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -304,14 +1020,12 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -333,6 +1047,16 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.59012014" vertical-offset="0" max-vertical-offset="4403">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
 
