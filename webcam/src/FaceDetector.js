@@ -9,6 +9,8 @@ var FacesDetection = function() {
 
     var self = this;
 
+    self.socket     = null;
+
     self.video      = null;
     self.ctx        = null;
     self.canvas     = null;
@@ -25,6 +27,20 @@ var FacesDetection = function() {
     self.init = function() {
         console.log("Init Faces Detection");
 
+        // Socket
+
+        self.socket = io("http://127.0.0.1:3000");
+        self.socket.on("connect_error", function(error){
+            console.log("Error", error);
+        });
+
+        self.socket.on("connect", function() {
+            console.log("Connected");
+        });
+
+
+
+        // Canvas
         self.canvas = document.getElementById("cam-render");
 
         self.ctx    = self.canvas.getContext("2d");
@@ -114,9 +130,11 @@ var FacesDetection = function() {
             self.ctx.arc((pos[i].x + pos[i].width * 0.5), (pos[i].y + pos[i].height * 0.5),(pos[i].width + pos[i].height) * 0.25 * 1.2, 0, Math.PI * 2);
             self.ctx.stroke();
         }
-
+        if(self.faces != pos.length) {
+            self.socket.emit("faceDetected", pos.length);
+        }
         self.faces = pos.length;
-        console.log("Faces detected " + pos.length);
+        console.log("Faces detected : " + pos.length);
     };
 
 
