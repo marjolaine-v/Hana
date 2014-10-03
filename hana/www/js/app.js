@@ -43,7 +43,7 @@ var app = {
         that.initApp();
 
         // Socket io
-        this.socket = io("http://192.168.31.39:3000");
+        this.socket = io("http://127.0.0.1:3000");
         this.socket.on("connect_error", function(error){
             console.log("Error", error);
         });

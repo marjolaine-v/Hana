@@ -4,8 +4,7 @@ var App = {
 	five: require("johnny-five"),
 
 
-	// Express + Http pour créer le serveur node
-	express: require('express')(),
+	// Http pour créer le serveur node
 	http : null,
 
 	// Io pour le socket
@@ -87,38 +86,17 @@ var App = {
 
 		console.log('Init Socket');
 
-		// Serveur Http
-		this.http = require('http').Server(this.express);
+		var http = require('http');
+		var app = http.createServer(function(req, res) {
+			res.end('Ok en attente...');
+		}).listen(3000, '127.0.0.1');
 
-		// Socket IO pour communication avec page web
-		this.io = require('socket.io').listen(this.http);
+		console.log('Server running ar 127.0.0.1:3000');
 
-		// Routage : envoie le html sur http://localhost:3000
-		// A remplacer par sendFile('path_to_/index.html)
-		this.express.get('/', function(req, res){
-			res.send('<!DOCTYPE html>' +
-				'<html>' + 
-				'<head lang="en">' + 
-				    '<meta charset="UTF-8">' + 
-				    '<title>Hana Cam Test</title>' + 
-				'</head>' + 
-				'<body>' + 
-				    '<canvas id="cam-render" width="640" height="480"></canvas>' + 
-				    '<video  id="video" width="640" height="480"></video>' + 
-				'</body>' + 
-				'<script src="http://localhost/socket.io/socket.io.js"></script>' + 
-				'<script data-main="http://localhost/gobelins/Hana/server/src/main" src="http://localhost/gobelins/Hana/server/libs/require/require.js"></script>' + 
-				'</html>'
-			);
-		});
-
-		// Port 3000
-		this.http.listen(3000, function(){
-			console.log('listening on *:3000');
-		});
+		this.io = require('socket.io').listen(app);
 
 		// Lance le socket quand un User se connecte
-		this.io.on('connection', this.socketConnect.bind(this));
+		this.io.sockets.on('connection', this.socketConnect.bind(this));
 	},
 
 	socketConnect : function(socket){

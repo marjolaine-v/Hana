@@ -28,7 +28,7 @@ c:\wamp\www\gobelins\Hana\hana\platforms\android\assets\www\fonts\bebas__-webfon
 c:\wamp\www\gobelins\Hana\hana\platforms\android\assets\www\fonts\bebas__-webfont.woff \
 c:\wamp\www\gobelins\Hana\hana\platforms\android\assets\www\fonts\bebas__-webfont.woff2 \
 c:\wamp\www\gobelins\Hana\hana\platforms\android\assets\www\img\plant.jpg \
-c:\wamp\www\gobelins\Hana\hana\platforms\android\assets\www\js\index.js \
+c:\wamp\www\gobelins\Hana\hana\platforms\android\assets\www\js\app.js \
 c:\wamp\www\gobelins\Hana\hana\platforms\android\assets\www\js\libs \
 c:\wamp\www\gobelins\Hana\hana\platforms\android\assets\www\js\socket.io \
 c:\wamp\www\gobelins\Hana\hana\platforms\android\assets\www\js\libs\hammer.min.js \
