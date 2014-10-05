@@ -1,35 +1,34 @@
 var App = {
 
 	// Jonnhy five
-	five: require("johnny-five"),
-
+	five            : require("johnny-five"),
 
 	// Http pour créer le serveur node
-	http : null,
+	http            : null,
 
 	// Io pour le socket
-	io: null,
+	io              : null,
 
 	// Arduino board
-	board: null,
+	board           : null,
 
 	// Arduino components
-	redLed: null,
-	greenLed: null,
-	waterLed: null,
-	motor: null,
+	redLed          : null,
+	greenLed        : null,
+	waterLed        : null,
+	motor           : null,
 
 	// Socket
-	socket : null,
+	socket          : null,
 
 	// Step for humidity, luminosity, temperature, etc.
-	stepHumidity: 5,
+	stepHumidity    : 5,
 
 	// Min for humidity, luminosity, temperature, etc.
-	minHumidity: 35,
+	minHumidity     : 35,
 
 	// Plants' datas
-	plant: {
+	/*plant: {
 		"plant_id":1,
 		"last_watering":"29/09/2014",
 		"datas": [
@@ -56,27 +55,27 @@ var App = {
 			{"date":"10/13/2014","humidity":50,"temperature":23,"luminosity":52,"people_interested_in":null}
 		],
 		"dayState": null
-	},
+	},*/
 
 	/**************
 	 * INIT
 	 *************/
 
 	init: function(){
-
 		console.log('Init');
 
 		// Attends que l'Arduino soit prêt
-		this.board = new this.five.Board();
-		this.board.on("ready", this.arduinoReady.bind(this));
+		/*this.board = new this.five.Board();
+		this.board.on("ready", this.arduinoReady.bind(this));*/
+
+        this.initSocket();
 	},
 
 	arduinoReady: function(){
-
 		console.log('Arduino Ready');
 
 		// Init Arduino
-		this.initArduino();
+		//this.initArduino();
 
 		// Arduino est ok, init du socket
 		this.initSocket();
@@ -97,10 +96,21 @@ var App = {
 
 		// Lance le socket quand un User se connecte
 		this.io.sockets.on('connection', this.socketConnect.bind(this));
+
+        var fs = require('fs');
+        var vm = require('vm');
+
+        var includeInThisContext = function(path) {
+            var code = fs.readFileSync(path);
+            vm.runInThisContext(code, path);
+        }.bind(this);
+        includeInThisContext("./src/Plant.js");
+
+        this.plant = new Plant(1);
+        this.plant.init();
 	},
 
 	socketConnect : function(socket){
-
 		console.log('User connected');
 
 		// Socket
@@ -114,9 +124,6 @@ var App = {
 
 		// Lance le socket quand un User se connecte
 		this.socket.on('faceDetected', this.faceDetected.bind(this));
-
-		// // On écoute nos événements
-		// this.socket.on('btn-add-water', this.btnAddWater.bind(this));
 	},
 
 	socketDisconnect : function(){
@@ -128,22 +135,10 @@ var App = {
 	 * Soket
 	 *************/
 
-	faceDetected : function(el) {
-		console.log(el);
+	faceDetected : function(count) {
+		if(this.plant)
+            this.plant.updatePeopleAround(parseInt(count));
 	},
-
-	// btnAddWater : function(){
-
-	// 	this.plant.dayState.humidity = this.plant.dayState.humidity + this.stepHumidity;
-
-	// 	// Arduino
-	// 	this.setLeds('humidity', this.plant.dayState.humidity);
-
-	// 	// APP
-	// 	this.socket.emit('plant', this.getDatasForApp());
-	// },
-
-
 
 
 	/*************
@@ -151,23 +146,8 @@ var App = {
 	 ************/
 
 	getDatasForApp: function() {
-		var datas = {};
-
-		datas.dayState = this.plant.dayState;
-		datas.lastWatering = this.plant.last_watering;
-		datas.mins = {};
-		datas.mins.humidity = this.minHumidity;
-		datas.steps = {};
-		datas.steps.humidity = this.stepHumidity;
-
-		return datas;
+		return this.plant.getLastDatas();
 	},
-
-
-
-
-
-
 
 
 	/*************
@@ -219,8 +199,6 @@ var App = {
 
 		this.motor.start();
 
-		
-
 		// Set dayState
 		// this.plant.dayState = this.getDayState();
 		// this.setLeds('humidity', this.plant.dayState.humidity);
@@ -229,6 +207,7 @@ var App = {
 	getDayState: function() {
 		var today = new Date();
 		today.setHours(0,0,0,0);
+
 		var currentDate;
 
 		// JSON datas (if sensors to get datas, use them)
@@ -238,7 +217,7 @@ var App = {
 			if(currentDate.getDate() == today.getDate() && currentDate.getMonth() == today.getMonth() && currentDate.getYear() == today.getYear()) {
 				return this.plant.datas[j];
 			}
-		};
+		}
 	},
 
 	analyzeDatas: function() {
@@ -260,6 +239,6 @@ var App = {
 				break;
 		}
 	}
-}
+};
 
 App.init();
