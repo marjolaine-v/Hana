@@ -92,6 +92,16 @@ var app = {
 
     initApp: function() {
 
+        var date = new Date();
+
+
+        /** Time **/
+        setInterval(function() {
+            date = new Date();
+            $('.hour').html(date.getHours());
+            $('.minute').html(date.getMinutes());
+        },1000);
+
         /** Height round **/
         $('.height-js').height($('.height-js').width());
         $('.height-js-content').height($('.height-js-content').width());
@@ -183,14 +193,4 @@ var app = {
 };
 $(document).ready(function() {
     app.initialize();
-
-    var date = new Date();
-
-
-    /** Time **/
-    setInterval(function() {
-        date = new Date();
-        $('.hour').html(date.getHours());
-        $('.minute').html(date.getMinutes());
-    },1000);
 });

@@ -177,21 +177,33 @@ var App = {
 	initArduino: function() {
 
 		// Créer les composants Arduino
-		this.redLed = new this.five.Led({
-			pin: 9
-		});
-		this.greenLed = new this.five.Led({
-			pin: 10
-		});
-		this.waterLed = new this.five.Led({
+		this.sleepyLed = new this.five.Led({
 			pin: 11
 		});
-		this.motor = new this.five.Motor({
+		this.thirstyLed = new this.five.Led({
+			pin: 10
+		});
+		this.excitedLed = new this.five.Led({
+			pin: 9
+		});
+		this.boredLed = new this.five.Led({
+			pin: 8
+		});
+		this.happyLed = new this.five.Led({
+			pin: 7
+		});
+		this.angryLed = new this.five.Led({
+			pin: 6
+		});
+
+
+		this.wateringLed = new this.five.Led({
 			pin: 3
 		});
 
-		this.board.repl.inject({
-			motor: this.motor
+		this.wateringLed.pulse(100);
+		this.motor = new this.five.Motor({
+			pin: 5
 		});
 
 		var self = this;
@@ -210,8 +222,8 @@ var App = {
 		
 
 		// Set dayState
-		this.plant.dayState = this.getDayState();
-		this.setLeds('humidity', this.plant.dayState.humidity);
+		// this.plant.dayState = this.getDayState();
+		// this.setLeds('humidity', this.plant.dayState.humidity);
 	},
 
 	getDayState: function() {
@@ -234,7 +246,6 @@ var App = {
 	},
 
 	setLeds: function(type, value) {
-		this.motor.start();
 		switch(type) {
 			case 'humidity':
 				this.waterLed.on();
