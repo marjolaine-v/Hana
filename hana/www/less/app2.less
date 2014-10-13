@@ -1,6 +1,7 @@
 @import 'colors';
 @import 'fonts';
 @import 'functions';
+@import 'bootstrap/bootstrap';
 
 html {
 	margin: 0;
@@ -12,21 +13,35 @@ body {
 	min-height: 100%;
 	margin: 0;
 	padding: 0;
-	background: #403f3d url('../img/plant.jpg') no-repeat left center;
+	background: #403f3d url('../img/plant.jpg') no-repeat center center;
 	color: @text;
 	font-family: arial, sans-serif;
 
 	#nav {
+		.transition;
 		position: relative;
 		width: 300px;
 		height: 300px;
 		margin: auto;
-		border: 1px solid red;
 
 		div.shape {
 			position: absolute;
 			width: 150px;
 			height: 150px;
+
+			.background {
+				position: absolute;
+				width: 100px;
+				height: 100px;
+				background: rgba(255, 255, 255, 0.4);
+			}
+
+			.content {
+				position: absolute;
+				font-size: 30px;
+				line-height: 30px;
+				width: 150px;
+			}
 
 			&#watering {
 				top: 0;
@@ -35,12 +50,16 @@ body {
 				height: 0;
 				border-style: solid;
 				border-width: 0 0 150px 150px;
-				border-color: transparent transparent rgba(223, 228, 221, 0.9) transparent;
+				border-color: transparent transparent rgba(82, 183, 211, 0.8) transparent;
 
 				.content {
-					top: 125px;
-					right: 0;
+					top: 90px;
+					right: 25px;
 					text-align: right;
+				}
+				.background {
+					left: -125px;
+					top: 25px;
 				}
 			}
 
@@ -51,14 +70,20 @@ body {
 				height: 0;
 				border-style: solid;
 				border-width: 150px 0 0 150px;
-				border-color: transparent transparent transparent transparent;
+				border-color: transparent transparent transparent rgba(255, 255, 255, 0.8);
 
 				.content {
-					bottom: 0;
+					width: 135px;
+					bottom: 15px;
 					right: 0;
 
 					#hour {
 						color: @hour;
+					}
+
+					#date {
+						display: block;
+						font-size: 18px;
 					}
 				}
 			}
@@ -70,11 +95,11 @@ body {
 				height: 0;
 				border-style: solid;
 				border-width: 0 150px 150px 0;
-				border-color: transparent rgba(189, 197, 199, 0.8) transparent transparent;
+				border-color: transparent rgba(223, 228, 221, 0.8) transparent transparent;
 
 				.content {
 					top: 0;
-					left: 0;
+					left: -15px;
 					text-align: right;
 				}
 			}
@@ -86,19 +111,41 @@ body {
 				height: 0;
 				border-style: solid;
 				border-width: 150px 150px 0 0;
-				border-color: rgba(82, 183, 211, 0.8) transparent transparent transparent;
+				border-color: rgba(129, 202, 36, 0.7) transparent transparent transparent;
 
 				.content {
-					bottom: 125px;
-					left: 0;
+					bottom: 85px;
+					left: 30px;
+					width: 120px;
+				}
+				.background {
+					top: -125px;
+					left: 25px;
 				}
 			}
+		}
+	}
 
-			.content {
-				position: absolute;
-				line-height: 25px;
-				width: 150px;
-			}
+	div.plant {
+		.transition(1.5s);
+		overflow: hidden;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 999;
+		width: auto;
+		height: 0;
+		background-color: rgba(177, 214, 138, 0.8);
+	}
+
+	&.plant_opened {
+		#nav {
+			opacity: 0;
+		}
+		div.plant {
+			height: 100%;
 		}
 	}
 }

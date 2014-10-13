@@ -60,12 +60,25 @@ var app = {
 		 ***********************************/
 		var connectedToMeteoAPI = false;
 		console.log(">>>> Can access to meteo API?");
-		if(connectedToMeteoAPI) {
-			console.log("Yep. Set datas.");
-		}
-		else {
-			console.log("Nope.");
-		}
+		$.ajax({
+			url: 'http://api.openweathermap.org/data/2.5/weather?q=Annecy,fr',
+			data: null,
+			dataType: "json",
+			success: function(data)
+			{
+				console.log("Yep. Set datas.");
+				console.log(data);
+				var t = data.main.temp_max - 273.15;
+				var temp = '<h2>' + t + ' °C</h2>';
+				var meteoicon = '<img src="http://openweathermap.org/img/w/' + data.weather[0].icon + '.png" />'
+				var humidity = data.main.humidity;
+				$('#meteo .content').html(temp + meteoicon);
+			},
+			error: function(e)
+			{
+				console.log("Nope.");
+			}
+		});
 
 
 
@@ -88,17 +101,19 @@ var app = {
 					self.isConnected = true;
 				});
 
-				self.socket.on("watered", function() {
-		            console.log("You just watered the plant. Congrats!");
-		        });
+				self.socket.on("plantDatas", function(datas) {
+					if(datas != null && datas != '') {
+						self.goToPlant(datas);
+					}
+				})
 			}
 			else {
-				self.displayModal("Sorry, there are problems with the server.", "Nope. Problem with the connexion with Socket io.");
+				console.log("Nope. Problem with the connexion with Socket io.");
 				self.isConnected = false;
 			}
 		}
 		else {
-			self.displayModal("Sorry, there are problems with the server.", "Nope. io is undefined.");
+			console.log("Nope. io is undefined.");
 			self.isConnected = false;
 		}
 
@@ -113,10 +128,10 @@ var app = {
 			console.log(">>>> Can water?");
 			if(self.isConnected) {
 				console.log("Yep. Send socket to server to water plant.");
-				self.socket.emit("water");
+				self.socket.emit("waterPlant");
 			}
 			else {
-				self.displayModal("Sorry, you wan't water the plant for now.", "Nope. You can't water the plant for now.");
+				self.displayModal("Sorry, you can't water the plant for now.", "Nope. You can't water the plant for now.");
 			}
 		});
 		$('#plant').on('click', function(e) {
@@ -124,10 +139,11 @@ var app = {
 			console.log(">>>> Can access to plant datas?");
 			if(self.isConnected) {
 				console.log("Yep. Send socket to server to get datas' plant.");
-				self.socket.emit("plant-datas");
+				// self.socket.emit("getPlantDatas");
+				$('body').addClass('plant_opened');
 			}
 			else {
-				self.displayModal("Nope. You can't access to that part of the application.");
+				self.displayModal("Sorry, you can't access to the datas' plant for now. Try it later!", "Nope. You can't access to that part of the application.");
 			}
 		});
 	},
@@ -137,6 +153,13 @@ var app = {
 	displayModal: function(message, log) {
 		console.log(log);
 		$('#modal #modal_message').html(message);
+		$('#modal').modal();
+	},
+
+
+
+	goToPlant: function(datas) {
+		console.log(datas);
 	}
 };
 

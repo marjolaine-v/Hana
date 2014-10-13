@@ -14,12 +14,12 @@ var Plant = function(id) {
     self.lastCheckout   = {};
 
     self.MOOD_LIST = {
+        Sleepy  : false,
+        Thirsty : false,
+        Excited : false,
+        Bored   : false,
         Happy 	: false,
-        Sleepy	: false,
-        Excited	: false,
-        Angry	: false,
-        Thirsty	: false,
-        Bored   : false
+        Angry	: false
     };
 
     self.datas          = [];
@@ -36,7 +36,7 @@ var Plant = function(id) {
         self.lastWatering       = new Date();
 
         self.datas = [
-            {"date": "10/23/2014", "humidity": 15, "temperature":24.3, "luminosity":49},
+            {"date": "10/24/2014", "humidity": 15, "temperature":24.3, "luminosity":49},
             {"date": "10/23/2014", "humidity": 15, "temperature":24.3, "luminosity":49},
             {"date": "10/22/2014", "humidity": 38, "temperature":16.6, "luminosity":57},
             {"date": "10/21/2014", "humidity": 13, "temperature":20.6, "luminosity":69},
@@ -80,14 +80,14 @@ var Plant = function(id) {
     };
 
 
-    // met à jours la date du dernier arrosage
+    // met à jour la date du dernier arrosage
 	self.updateLastWatering = function(date) {
 		self.lastWatering       = date;
         self.MOOD_LIST.Thirsty  = false;
 	};
 
 
-    // met à jours l'humeur de la plante
+    // met à jour l'humeur de la plante
     self.updateMood = function() {
         var currentDate = new Date();
         var milliseconds, seconds, minutes, hours, days;
@@ -166,12 +166,12 @@ var Plant = function(id) {
         diff = (diff - (minutes = diff%60)) / 60;
         days = (diff - (hours   = diff%24)) / 24;
 
-        console.info(sign === 1 ? "Elapsed: " : "Remains: ",
-                days            + " days, ",
-                hours           + " hours, ",
-                minutes         + " minutes, ",
-                seconds         + " seconds, ",
-                milliseconds    + " milliseconds.");
+        // console.info(sign === 1 ? "Elapsed: " : "Remains: ",
+        //         days            + " days, ",
+        //         hours           + " hours, ",
+        //         minutes         + " minutes, ",
+        //         seconds         + " seconds, ",
+        //         milliseconds    + " milliseconds.");
 
         if(hours >= WATERING_TIME) {
             self.MOOD_LIST.Thirsty = true;

@@ -4,67 +4,59 @@
 	<meta charset="utf-8" />
 	<meta name="format-detection" content="telephone=no" />
 	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-	<link rel="stylesheet" type="text/css" href="css/app.css" />
+	<link rel="stylesheet" type="text/css" href="css/app2.css" />
 	<script src="http://127.0.0.1:3000/socket.io/socket.io.js"></script>
+	<!--<script src="http://127.0.0.1/socket.io/socket.io.js"></script>-->
     <script src="js/libs/jquery-1.11.1.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/app2.js"></script>
 	<title>HANA</title>
 </head>
 <body>
 	<div id="wrapper">
-		<header class="blue">
-			<h1>Hana</h1>
-		</header>
-		<div id="main">
-			<div id="round" class="height-js">
-				<div class="round-top height-js">
-					<div class="shadow height-js-80">
-						<div id="content" class="height-js-content">
-							<div class="content height-js-bordered-80">
-								<div class="temp">
-									18<sup>°</sup>
-								</div>
-								<div class="hour-minute">
-									<span class="hour"></span><span> HEURES </span><span class="minute"></span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="plant" class="height-js-bordered">
-					<div class="coloration"></div>
-					<div id="warning">
-						<button></button>
-					</div>
+		<div id="nav">
+			<div id="watering" class="shape">
+				<div class="background"></div>
+				<div class="content">
+					<span class="glyphicon glyphicon-tint"></span>
 				</div>
 			</div>
-			<section class="infos">
-				<table>
-					<tr>
-						<td id="water">
-							<h2>Dernier arrosage</h2>
-							<div><span></span></div>
-						</td>
-						<td id="humidity">
-							<h2>Humidité</h2>
-							<div><span></span>%</div>
-						</td>
-					</tr>
-					<tr>
-						<td id="luminosity">
-							<h2>Taux de luminosité</h2>
-							<div><span></span>%</div>
-						</td>
-						<td id="temperature">
-							<h2>Température</h2>
-							<div><span></span>°C</div>
-						</td>
-					</tr>
-				</table>
-			</section>
+			<div id="today" class="shape">
+				<div class="content">
+					<span id="hour"></span>
+					<span id="date"></span>
+				</div>
+			</div>
+			<div id="meteo" class="shape">
+				<div class="content">
+				</div>
+			</div>
+			<div id="plant" class="shape">
+				<div class="background"></div>
+				<div class="content">
+					<span class="glyphicon glyphicon-leaf"></span>
+					<!-- <span class="glyphicon glyphicon-tree-deciduous"></span> -->
+				</div>
+			</div>
 		</div>
-		<footer class="blue">
-		</footer>
+	</div>
+	<div class="plant">
+	</div>
+	<div id="modal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h4 class="modal-title">Access denied</h4>
+				</div>
+				<div class="modal-body">
+					<p id="modal_message"></p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

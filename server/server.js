@@ -13,9 +13,13 @@ var App = {
 	board           : null,
 
 	// Arduino components
-	redLed          : null,
-	greenLed        : null,
-	waterLed        : null,
+	sleepyLed       : null,
+	thirstyLed      : null,
+	excitedLed      : null,
+	boredLed		: null,
+	happyLed		: null,
+	angryLed		: null,
+	wateringLed		: null,
 	motor           : null,
 
 	// Socket
@@ -27,36 +31,6 @@ var App = {
 	// Min for humidity, luminosity, temperature, etc.
 	minHumidity     : 35,
 
-	// Plants' datas
-	/*plant: {
-		"plant_id":1,
-		"last_watering":"29/09/2014",
-		"datas": [
-			{"date":"09/23/2014","humidity":15,"temperature":24.3,"luminosity":49,"people_interested_in":null},
-			{"date":"09/24/2014","humidity":38,"temperature":16.6,"luminosity":57,"people_interested_in":null},
-			{"date":"09/25/2014","humidity":13,"temperature":20.6,"luminosity":69,"people_interested_in":null},
-			{"date":"09/26/2014","humidity":52,"temperature":25,"luminosity":67,"people_interested_in":null},
-			{"date":"09/27/2014","humidity":60,"temperature":34.6,"luminosity":61,"people_interested_in":null},
-			{"date":"09/28/2014","humidity":79,"temperature":18.8,"luminosity":23,"people_interested_in":null},
-			{"date":"09/29/2014","humidity":41,"temperature":22.7,"luminosity":21,"people_interested_in":null},
-			{"date":"09/30/2014","humidity":65,"temperature":20.2,"luminosity":52,"people_interested_in":null},
-			{"date":"10/01/2014","humidity":32,"temperature":19.5,"luminosity":52,"people_interested_in":null},
-			{"date":"10/02/2014","humidity":23,"temperature":23.6,"luminosity":52,"people_interested_in":null},
-			{"date":"10/03/2014","humidity":20,"temperature":20.6,"luminosity":52,"people_interested_in":null},
-			{"date":"10/04/2014","humidity":10,"temperature":25.2,"luminosity":52,"people_interested_in":null},
-			{"date":"10/05/2014","humidity":47,"temperature":26.9,"luminosity":52,"people_interested_in":null},
-			{"date":"10/06/2014","humidity":50,"temperature":27.1,"luminosity":52,"people_interested_in":null},
-			{"date":"10/07/2014","humidity":65,"temperature":20.2,"luminosity":52,"people_interested_in":null},
-			{"date":"10/08/2014","humidity":23,"temperature":20.5,"luminosity":52,"people_interested_in":null},
-			{"date":"10/09/2014","humidity":32,"temperature":18.8,"luminosity":52,"people_interested_in":null},
-			{"date":"10/10/2014","humidity":20,"temperature":17.3,"luminosity":52,"people_interested_in":null},
-			{"date":"10/11/2014","humidity":10,"temperature":19.5,"luminosity":52,"people_interested_in":null},
-			{"date":"10/12/2014","humidity":47,"temperature":19,"luminosity":52,"people_interested_in":null},
-			{"date":"10/13/2014","humidity":50,"temperature":23,"luminosity":52,"people_interested_in":null}
-		],
-		"dayState": null
-	},*/
-
 	/**************
 	 * INIT
 	 *************/
@@ -65,17 +39,30 @@ var App = {
 		console.log('Init');
 
 		// Attends que l'Arduino soit prêt
-		/*this.board = new this.five.Board();
-		this.board.on("ready", this.arduinoReady.bind(this));*/
+		this.board = new this.five.Board();
+		this.board.on("ready", this.arduinoReady.bind(this));
 
-        this.initSocket();
+		// Just for tests without Arduino board
+        // this.initSocket();
 	},
 
 	arduinoReady: function(){
 		console.log('Arduino Ready');
 
+        var fs = require('fs');
+        var vm = require('vm');
+
+        var includeInThisContext = function(path) {
+            var code = fs.readFileSync(path);
+            vm.runInThisContext(code, path);
+        }.bind(this);
+        includeInThisContext("./src/Plant.js");
+
+        this.plant = new Plant(1);
+        this.plant.init();
+
 		// Init Arduino
-		//this.initArduino();
+		this.initArduino();
 
 		// Arduino est ok, init du socket
 		this.initSocket();
@@ -90,40 +77,26 @@ var App = {
 			res.end('Ok en attente...');
 		}).listen(3000, '127.0.0.1');
 
-		console.log('Server running ar 127.0.0.1:3000');
-
 		this.io = require('socket.io').listen(app);
 
 		// Lance le socket quand un User se connecte
 		this.io.sockets.on('connection', this.socketConnect.bind(this));
-
-        var fs = require('fs');
-        var vm = require('vm');
-
-        var includeInThisContext = function(path) {
-            var code = fs.readFileSync(path);
-            vm.runInThisContext(code, path);
-        }.bind(this);
-        includeInThisContext("./src/Plant.js");
-
-        this.plant = new Plant(1);
-        this.plant.init();
 	},
 
 	socketConnect : function(socket){
 		console.log('User connected');
 
-		// Socket
-		this.socket = socket;
+		var self = this;
 
-		// APP
-		this.socket.emit('plant', this.getDatasForApp());
+		// Socket
+		self.socket = socket;
 
 		// Deconnexion
-		this.socket.on('disconnect', this.socketDisconnect.bind(this));
+		self.socket.on('disconnect', self.socketDisconnect.bind(this));
 
-		// Lance le socket quand un User se connecte
-		this.socket.on('faceDetected', this.faceDetected.bind(this));
+		// APP
+		self.socket.on('getPlantDatas', self.getPlantDatas.bind(this));
+		self.socket.on('waterPlant', self.waterPlant.bind(this));
 	},
 
 	socketDisconnect : function(){
@@ -136,8 +109,9 @@ var App = {
 	 *************/
 
 	faceDetected : function(count) {
-		if(this.plant)
+		if(this.plant) {
             this.plant.updatePeopleAround(parseInt(count));
+        }
 	},
 
 
@@ -145,8 +119,9 @@ var App = {
 	 * APPLICATION
 	 ************/
 
-	getDatasForApp: function() {
-		return this.plant.getLastDatas();
+	getPlantDatas: function() {
+		var self = this;
+		self.socket.emit("plantDatas", self.plant.getLastDatas());
 	},
 
 
@@ -156,88 +131,106 @@ var App = {
 
 	initArduino: function() {
 
-		// Créer les composants Arduino
-		this.sleepyLed = new this.five.Led({
+		var self = this;
+
+		// Moods leds
+		self.sleepyLed = new self.five.Led({
 			pin: 11
 		});
-		this.thirstyLed = new this.five.Led({
+		self.thirstyLed = new self.five.Led({
 			pin: 10
 		});
-		this.excitedLed = new this.five.Led({
+		self.excitedLed = new self.five.Led({
 			pin: 9
 		});
-		this.boredLed = new this.five.Led({
+		self.boredLed = new self.five.Led({
 			pin: 8
 		});
-		this.happyLed = new this.five.Led({
+		self.happyLed = new self.five.Led({
 			pin: 7
 		});
-		this.angryLed = new this.five.Led({
+		self.angryLed = new self.five.Led({
 			pin: 6
 		});
 
 
-		this.wateringLed = new this.five.Led({
+		// Water led
+		self.wateringLed = new self.five.Led({
 			pin: 3
 		});
 
-		this.wateringLed.pulse(100);
-		this.motor = new this.five.Motor({
+
+		// Motor
+		self.motor = new self.five.Motor({
 			pin: 5
 		});
 
+		// self.motor.on("start", function(err, timestamp) {
+		// 	console.log("start", timestamp);
+
+		// 	// Demonstrate motor stop in 2 seconds
+		// 	self.board.wait(2000, function() {
+		// 		self.motor.stop();
+		// 	});
+		// });
+
+		// this.motor.start();
+
+		self.setLeds();
+	},
+
+	setLeds: function() {
+
 		var self = this;
+		console.log(self.plant.MOOD_LIST);
 
-		self.motor.on("start", function(err, timestamp) {
-			console.log("start", timestamp);
+		if(self.plant.MOOD_LIST.Sleepy) {
+			self.sleepyLed.on();
+		}
+		else {
+			self.sleepyLed.off();
+		}
 
-			// Demonstrate motor stop in 2 seconds
-			self.board.wait(2000, function() {
-				self.motor.stop();
-			});
-		});
+		if(self.plant.MOOD_LIST.Thirsty) {
+			self.thirstyLed.on();
+		}
+		else {
+			self.thirstyLed.off();
+		}
 
-		this.motor.start();
+		if(self.plant.MOOD_LIST.Excited) {
+			self.excitedLed.on();
+		}
+		else {
+			self.excitedLed.off();
+		}
 
-		// Set dayState
-		// this.plant.dayState = this.getDayState();
-		// this.setLeds('humidity', this.plant.dayState.humidity);
-	},
+		if(self.plant.MOOD_LIST.Bored) {
+			self.boredLed.on();
+		}
+		else {
+			self.boredLed.off();
+		}
 
-	getDayState: function() {
-		var today = new Date();
-		today.setHours(0,0,0,0);
+		if(self.plant.MOOD_LIST.Happy) {
+			self.happyLed.on();
+		}
+		else {
+			self.happyLed.off();
+		}
 
-		var currentDate;
-
-		// JSON datas (if sensors to get datas, use them)
-		for (var j = this.plant.datas.length - 1; j >= 0; j--) {
-			currentDate = new Date(this.plant.datas[j].date);
-			currentDate.setHours(0, 0, 0, 0);
-			if(currentDate.getDate() == today.getDate() && currentDate.getMonth() == today.getMonth() && currentDate.getYear() == today.getYear()) {
-				return this.plant.datas[j];
-			}
+		if(self.plant.MOOD_LIST.Angry) {
+			self.angryLed.on();
+		}
+		else {
+			self.angryLed.off();
 		}
 	},
 
-	analyzeDatas: function() {
-
-	},
-
-	setLeds: function(type, value) {
-		switch(type) {
-			case 'humidity':
-				this.waterLed.on();
-				if(value < this.minHumidity) {
-					this.redLed.pulse(400);
-					this.greenLed.stop().off();
-				}
-				else {
-					this.redLed.stop().off();
-					this.greenLed.pulse(1500);
-				}
-				break;
-		}
+	waterPlant: function() {
+		this.wateringLed.pulse(500);
+		// this.plant.updateLastWatering();
+		this.setLeds();
 	}
 };
 
