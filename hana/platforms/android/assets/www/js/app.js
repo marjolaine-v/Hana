@@ -43,7 +43,7 @@ var app = {
         that.initApp();
 
         // Socket io
-        this.socket = io("http://192.168.31.39:3000");
+        this.socket = io("http://127.0.0.1:3000");
         this.socket.on("connect_error", function(error){
             console.log("Error", error);
         });
@@ -91,6 +91,16 @@ var app = {
 
 
     initApp: function() {
+
+        var date = new Date();
+
+
+        /** Time **/
+        setInterval(function() {
+            date = new Date();
+            $('.hour').html(date.getHours());
+            $('.minute').html(date.getMinutes());
+        },1000);
 
         /** Height round **/
         $('.height-js').height($('.height-js').width());
@@ -183,14 +193,4 @@ var app = {
 };
 $(document).ready(function() {
     app.initialize();
-
-    var date = new Date();
-
-
-    /** Time **/
-    setInterval(function() {
-        date = new Date();
-        $('.hour').html(date.getHours());
-        $('.minute').html(date.getMinutes());
-    },1000);
 });

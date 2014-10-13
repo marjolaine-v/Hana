@@ -15,7 +15,7 @@ var Plant = function(id) {
 
     self.MOOD_LIST = {
         Sleepy  : false,
-        Thirsty : false,
+        Thirsty : true,
         Excited : false,
         Bored   : false,
         Happy 	: false,
@@ -60,7 +60,7 @@ var Plant = function(id) {
             {"date": "10/03/2014", "humidity": 50, "temperature":23.0, "luminosity":52}
         ];
 
-        setInterval(self.updateMood, 1000);
+        setInterval(self.updateMood, 100);
 	};
 
 
@@ -132,6 +132,7 @@ var Plant = function(id) {
     // check si la plante est excitée
     self.checkExcited = function() {
         self.MOOD_LIST.Excited = self.friends > 1;
+        // console.log(self.friends);
     };
 
 
@@ -173,7 +174,7 @@ var Plant = function(id) {
         //         seconds         + " seconds, ",
         //         milliseconds    + " milliseconds.");
 
-        if(hours >= WATERING_TIME) {
+        if(seconds >= WATERING_TIME) {
             self.MOOD_LIST.Thirsty = true;
         }
     };

@@ -29,7 +29,7 @@ var FacesDetection = function() {
 
         // Socket
 
-        self.socket = io("http://127.0.0.1:3000");
+        self.socket = io("http://localhost:3000");
         self.socket.on("connect_error", function(error){
             console.log("Error", error);
         });

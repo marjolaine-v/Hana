@@ -20,7 +20,11 @@ var App = {
 	happyLed		: null,
 	angryLed		: null,
 	wateringLed		: null,
-	motor           : null,
+	servo           : null,
+
+	// Plant
+	plant 			: null,
+	thirstyNotif    : false,
 
 	// Socket
 	socket          : null,
@@ -86,21 +90,21 @@ var App = {
 	socketConnect : function(socket){
 		console.log('User connected');
 
-		var self = this;
-
 		// Socket
-		self.socket = socket;
+		this.socket = socket;
 
 		// Deconnexion
-		self.socket.on('disconnect', self.socketDisconnect.bind(this));
+		this.socket.on('disconnect', this.socketDisconnect.bind(this));
+
+		// Webcam
+		this.socket.on('faceDetected', this.faceDetected.bind(this));
 
 		// APP
-		self.socket.on('getPlantDatas', self.getPlantDatas.bind(this));
-		self.socket.on('waterPlant', self.waterPlant.bind(this));
+		this.socket.on('getPlantDatas', this.getPlantDatas.bind(this));
+		this.socket.on('waterPlant', this.waterPlant.bind(this));
 	},
 
 	socketDisconnect : function(){
-
 		console.log('User disconnected');
 	},
 
@@ -120,8 +124,7 @@ var App = {
 	 ************/
 
 	getPlantDatas: function() {
-		var self = this;
-		self.socket.emit("plantDatas", self.plant.getLastDatas());
+		this.socket.emit("plantDatas", this.plant.getLastDatas());
 	},
 
 
@@ -131,58 +134,56 @@ var App = {
 
 	initArduino: function() {
 
-		var self = this;
-
 		// Moods leds
-		self.sleepyLed = new self.five.Led({
+		this.sleepyLed = new this.five.Led({
 			pin: 11
 		});
-		self.thirstyLed = new self.five.Led({
+		this.thirstyLed = new this.five.Led({
 			pin: 10
 		});
-		self.excitedLed = new self.five.Led({
+		this.excitedLed = new this.five.Led({
 			pin: 9
 		});
-		self.boredLed = new self.five.Led({
+		this.boredLed = new this.five.Led({
 			pin: 8
 		});
-		self.happyLed = new self.five.Led({
+		this.happyLed = new this.five.Led({
 			pin: 7
 		});
-		self.angryLed = new self.five.Led({
+		this.angryLed = new this.five.Led({
 			pin: 6
 		});
 
 
 		// Water led
-		self.wateringLed = new self.five.Led({
+		this.wateringLed = new this.five.Led({
 			pin: 3
 		});
 
 
-		// Motor
-		self.motor = new self.five.Motor({
+		// Servo
+		this.servo = new this.five.Servo({
 			pin: 5
 		});
-
-		// self.motor.on("start", function(err, timestamp) {
-		// 	console.log("start", timestamp);
-
-		// 	// Demonstrate motor stop in 2 seconds
-		// 	self.board.wait(2000, function() {
-		// 		self.motor.stop();
-		// 	});
-		// });
-
-		// this.motor.start();
-
-		self.setLeds();
-	},
-
-	setLeds: function() {
+		this.servo.to(0);
+		
 
 		var self = this;
-		console.log(self.plant.MOOD_LIST);
+		setInterval(function() {
+			self.setLeds(self);
+
+			if(self.plant.MOOD_LIST.Thirsty) {
+				if(!self.thirstyNotif && self.socket) {
+					console.log("Notification 1");
+					self.socket.emit("thirstyNotif");
+					console.log("Notification 2");
+					self.thirstyNotif = true;
+				}
+			}
+		}, 1000);
+	},
+
+	setLeds: function(self) {
 
 		if(self.plant.MOOD_LIST.Sleepy) {
 			self.sleepyLed.on();
@@ -229,8 +230,16 @@ var App = {
 
 	waterPlant: function() {
 		this.wateringLed.pulse(500);
-		// this.plant.updateLastWatering();
-		this.setLeds();
+		this.servo.to(120, 2000);
+		var self = this;
+
+		setTimeout(function() {
+			self.wateringLed.stop().off();
+			self.servo.to(0, 2000);
+			self.plant.updateLastWatering(new Date());
+			self.setLeds(self);
+			self.thirstyNotif = false;
+		}, 5000);
 	}
 };
 
