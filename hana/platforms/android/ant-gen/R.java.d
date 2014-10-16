@@ -1,4 +1,4 @@
-c:\wamp\www\gobelins\Hana\hana\platforms\android\ant-gen\com\crm13\hana\R.java \
+c:\wamp\www\gobelins\Hana\hana\platforms\android\ant-gen\com\gobelins\crm13\R.java \
  : c:\wamp\www\gobelins\Hana\hana\platforms\android\res\drawable\icon.png \
 c:\wamp\www\gobelins\Hana\hana\platforms\android\res\drawable-hdpi\icon.png \
 c:\wamp\www\gobelins\Hana\hana\platforms\android\res\drawable-ldpi\icon.png \

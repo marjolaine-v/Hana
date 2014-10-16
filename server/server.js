@@ -35,23 +35,23 @@ var App = {
 	// Min for humidity, luminosity, temperature, etc.
 	minHumidity     : 35,
 
-	/**************
+
+
+
+	/*******************************************
 	 * INIT
-	 *************/
-
+	 *******************************************/
 	init: function(){
-		console.log('Init');
 
-		// Attends que l'Arduino soit prêt
+		// Wait for arduinoReady
 		this.board = new this.five.Board();
 		this.board.on("ready", this.arduinoReady.bind(this));
 
-		// Just for tests without Arduino board
+		// DEBUG : just for tests without Arduino board
         // this.initSocket();
 	},
 
 	arduinoReady: function(){
-		console.log('Arduino Ready');
 
         var fs = require('fs');
         var vm = require('vm');
@@ -62,19 +62,24 @@ var App = {
         }.bind(this);
         includeInThisContext("./src/Plant.js");
 
+        // Set plant
         this.plant = new Plant(1);
         this.plant.init();
 
 		// Init Arduino
 		this.initArduino();
 
-		// Arduino est ok, init du socket
+		// Init du socket
 		this.initSocket();
 	},
 
-	initSocket : function(){
 
-		console.log('Init Socket');
+
+
+	/*******************************************
+	 * SOCKET
+	 *******************************************/
+	initSocket : function(){
 
 		var http = require('http');
 		var app = http.createServer(function(req, res) {
@@ -88,7 +93,6 @@ var App = {
 	},
 
 	socketConnect : function(socket){
-		console.log('User connected');
 
 		// Socket
 		this.socket = socket;
@@ -102,16 +106,26 @@ var App = {
 		// APP
 		this.socket.on('getPlantDatas', this.getPlantDatas.bind(this));
 		this.socket.on('waterPlant', this.waterPlant.bind(this));
+
+		var self = this;
+
+		// DEBUG
+		/*setTimeout(function() {
+			self.setLeds(self);
+			self.socket.emit("thirstyNotif");
+		}, 5000);*/
 	},
 
 	socketDisconnect : function(){
 		console.log('User disconnected');
 	},
 
-	/**************
-	 * Soket
-	 *************/
 
+
+
+	/*******************************************
+	 * WEBCAM
+	 *******************************************/
 	faceDetected : function(count) {
 		if(this.plant) {
             this.plant.updatePeopleAround(parseInt(count));
@@ -119,22 +133,38 @@ var App = {
 	},
 
 
-	/*************
-	 * APPLICATION
-	 ************/
 
+
+	/*******************************************
+	 * APPLICATION
+	 *******************************************/
 	getPlantDatas: function() {
 		this.socket.emit("plantDatas", this.plant.getLastDatas());
 	},
 
+	waterPlant: function() {
+		this.wateringLed.pulse(500);
+		this.servo.to(100, 2000);
+		var self = this;
 
-	/*************
+		setTimeout(function() {
+			self.wateringLed.stop().off();
+			self.servo.to(0, 2000);
+			self.plant.updateLastWatering(new Date());
+			self.setLeds(self);
+			self.thirstyNotif = false;
+		}, 5000);
+	},
+
+
+
+
+	/*******************************************
 	 * ARDUINO
-	 ************/
-
+	 *******************************************/
 	initArduino: function() {
 
-		// Moods leds
+		// Set moods leds
 		this.sleepyLed = new this.five.Led({
 			pin: 11
 		});
@@ -169,22 +199,26 @@ var App = {
 		
 
 		var self = this;
+
+		// Set leds every second
 		setInterval(function() {
 			self.setLeds(self);
 
+			// If thirsy & no notification sent, send a notification
 			if(self.plant.MOOD_LIST.Thirsty) {
 				if(!self.thirstyNotif && self.socket) {
-					console.log("Notification 1");
 					self.socket.emit("thirstyNotif");
-					console.log("Notification 2");
 					self.thirstyNotif = true;
 				}
 			}
 		}, 1000);
+
+		
 	},
 
 	setLeds: function(self) {
 
+		// Sleepy led
 		if(self.plant.MOOD_LIST.Sleepy) {
 			self.sleepyLed.on();
 		}
@@ -192,6 +226,7 @@ var App = {
 			self.sleepyLed.off();
 		}
 
+		// Thirsty led
 		if(self.plant.MOOD_LIST.Thirsty) {
 			self.thirstyLed.on();
 		}
@@ -199,6 +234,7 @@ var App = {
 			self.thirstyLed.off();
 		}
 
+		// Excited led
 		if(self.plant.MOOD_LIST.Excited) {
 			self.excitedLed.on();
 		}
@@ -206,6 +242,7 @@ var App = {
 			self.excitedLed.off();
 		}
 
+		// Bored led
 		if(self.plant.MOOD_LIST.Bored) {
 			self.boredLed.on();
 		}
@@ -213,6 +250,7 @@ var App = {
 			self.boredLed.off();
 		}
 
+		// Happy led
 		if(self.plant.MOOD_LIST.Happy) {
 			self.happyLed.on();
 		}
@@ -220,26 +258,13 @@ var App = {
 			self.happyLed.off();
 		}
 
+		// Angry led
 		if(self.plant.MOOD_LIST.Angry) {
 			self.angryLed.on();
 		}
 		else {
 			self.angryLed.off();
 		}
-	},
-
-	waterPlant: function() {
-		this.wateringLed.pulse(500);
-		this.servo.to(120, 2000);
-		var self = this;
-
-		setTimeout(function() {
-			self.wateringLed.stop().off();
-			self.servo.to(0, 2000);
-			self.plant.updateLastWatering(new Date());
-			self.setLeds(self);
-			self.thirstyNotif = false;
-		}, 5000);
 	}
 };
 

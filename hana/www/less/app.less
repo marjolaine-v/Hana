@@ -1,208 +1,185 @@
 @import 'colors';
 @import 'fonts';
 @import 'functions';
+@import 'bootstrap/bootstrap';
 
-body {
+html {
 	margin: 0;
-	background-color: @light-gray;
+	padding: 0;
+	width: 100%;
+	min-height: 100%;
+}
+body {
+	.transition(1.5s);
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	background: #403f3d url('../img/plant.jpg') no-repeat center center;
+	color: @text;
+	font-family: arial, sans-serif;
 
-	#wrapper {
-		margin: 10px;
-		padding: 0;
-		background-color: @white;
+	#nav {
+		.transition;
+		position: relative;
+		width: 300px;
+		height: 300px;
+		margin: auto;
 
-		header {
-			.transition;
-			margin: 0;
-			padding: 0;
+		div.shape {
+			position: absolute;
+			width: 150px;
+			height: 150px;
+
+			.content {
+				position: absolute;
+				font-size: 30px;
+				line-height: 30px;
+				width: 150px;
+			}
+
+			&#watering {
+				top: 0;
+				left: 0;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 0 150px 150px;
+				border-color: transparent transparent rgba(82, 183, 211, 0.5) transparent;
+
+				.content {
+					top: 90px;
+					right: 25px;
+					text-align: right;
+				}
+			}
+
+			&#today {
+				top: 0;
+				right: 0;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 150px 0 0 150px;
+				border-color: transparent transparent transparent rgba(255, 255, 255, 0.8);
+
+				.content {
+					width: 135px;
+					bottom: 15px;
+					right: 0;
+
+					#hour {
+						color: @hour;
+					}
+
+					#date {
+						display: block;
+						font-size: 18px;
+					}
+				}
+			}
+
+			&#meteo {
+				bottom: 0;
+				left: 0;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 150px 150px 0;
+				border-color: transparent rgba(223, 228, 221, 0.8) transparent transparent;
+
+				.content {
+					top: 0;
+					left: -15px;
+					text-align: right;
+
+					.icon {
+						max-width: 40px;
+					}
+				}
+			}
+
+			&#plant {
+				bottom: 0;
+				right: 0;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 150px 150px 0 0;
+				border-color: rgba(129, 202, 36, 0.7) transparent transparent transparent;
+
+				.content {
+					bottom: 85px;
+					left: 30px;
+					width: 120px;
+				}
+			}
+		}
+	}
+
+	div#datas_plant,
+	div#datas_water {
+		.transition(1.5s);
+		overflow: hidden;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 999;
+		width: auto;
+		height: 0;
+		background-color: rgba(177, 214, 138, 0.8);
+		color: white;
+
+		h2 {
 			text-align: center;
-
-			&.blue {
-				background-color: @blue;
-			}
-			&.green {
-				background-color: @green;
-			}
-
-			h1 {
-				height: 50px;
-				margin: 0;
-				padding: 0;
-				line-height: 50px;
-				color: @white;
-				text-transform: uppercase;
-				font-family: 'bebasregular';
-				letter-spacing: 20px;
-			}
 		}
 
-		#main {
-			font-family: arial, sans-serif;
+		.content {
+			margin: 20px;
+			padding: 20px;
+			border: 1px solid white;
+			text-transform: uppercase;
 
-			#round {
-				.border-radius;
-				box-sizing: border-box;
-				position: relative;
-				width: 90%;
-				max-width: 400px;
-				height: 400px;
-				margin: 20px auto;
-
-				.round-top {
-					.border-radius;
-					overflow: hidden;
-					position: absolute;
-					top: 0;
-					width: 100%;
-
-					.shadow {
-						.box-shadow;
-						box-sizing: border-box;
-						position: absolute;
-						z-index: 90;
-						top: 0;
-						overflow: hidden;
-						width: 100%;
-					}
-				}
-
-				#content, #plant {
-					.border-radius;
-					box-sizing: border-box;
-					position: absolute;
-					left: 0;
-					width: 100%;
-				}
-
-				#content {
-					top: 0;
-					border: 18px solid @blue;
-					background-color: @white;
-					text-align: center;
-
-					.content {
-						position: relative;
-						width: 100%;
-
-						.temp {
-							position: absolute;
-							display: block;
-							top: 10px;
-							width: 100%;
-							font-family: 'bebasregular';
-							font-size: 80pt;
-							color: @dark-gray;
-						}
-						.hour-minute {
-							position: absolute;
-							bottom: 0px;
-							width: 100%;
-							font-family: 'bebasregular';
-							font-size: 10pt;
-							letter-spacing: 5px;
-							color: @medium-gray;
-
-							span {
-								display: inline-block;
-								vertical-align: top;
-								height: 35px;
-								margin: 0 8px;
-								line-height: 35px;
-
-								&.hour, &.minute {
-									letter-spacing: 0;
-									font-size: 26pt;
-								}
-							}
-						}
-					}
-				}
-
-				#plant {
-					z-index: 80;
-					bottom: 0;
-					overflow: hidden;
-					border: 18px solid @green;
-					background-image: url('../img/plant.jpg');
-					background-size: cover;
-
-					.coloration {
-						width: 100%;
-						height: 100%;
-						background: rgba(100,169,100,0.4);
-					}
-
-					#warning {
-						.transition;
-						opacity: 0;
-						height: 100%;
-						padding-top: 80px;
-						background-color: rgba(225, 47, 47, 0.7);
-						text-align: center;
-
-						button {
-							.transition;
-							opacity: 0;
-							border: 0;
-							width: 100%;
-							height: 100%;
-							color: @white;
-							font-size: 20pt;
-							font-family: 'bebasregular';
-							text-transform: uppercase;
-							background: none;
-						}
-
-						&.on {
-							opacity: 1;
-							padding-top: 0;
-							button {
-								opacity: 1;
-							}
-						}
-					}
-				}
-			}
-
-			.infos {
-				table {
-					width: 90%;
-					margin: 0 auto 10px;
-					td {
-						vertical-align: top;
-						h2 {
-							width: 65%;
-							font-size: 9pt;
-							color: @medium-gray;
-							text-transform: uppercase;
-						}
-						span {
-							font-size: 16pt;
-							color: @dark-gray;
-							text-transform: uppercase;
-						}
-
-						&.warning {
-							span {
-								color: @red;
-							}
-						}
-					}
-				}
+			.date {
+				text-align: right;
 			}
 		}
-		footer {
-			.transition;
-			height: 10px;
-			margin: 0;
-			padding: 0;
+		.glyphicon {
+			position: absolute;
+			top: auto;
+			left: 0;
+			bottom: 20px;
+			display: block;
+			width: 100%;
+			height: 60px;
+			line-height: 60px;
+			text-align: center;
+		}
+	}
 
-			&.blue {
-				background-color: @blue;
-			}
-			&.green {
-				background-color: @green;
-			}
+	div#datas_water {
+		background-color: rgba(82, 183, 211, 0.7);
+	}
+
+	&.plant_opened {
+		background-position: left center;
+
+		#nav {
+			opacity: 0;
+		}
+		div#datas_plant {
+			height: 100%;
+		}
+	}
+
+	&.water_opened {
+		background-position: right center;
+		#nav {
+			opacity: 0;
+		}
+		div#datas_water {
+			height: 100%;
 		}
 	}
 }

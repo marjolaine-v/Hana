@@ -132,7 +132,6 @@ var Plant = function(id) {
     // check si la plante est excitée
     self.checkExcited = function() {
         self.MOOD_LIST.Excited = self.friends > 1;
-        // console.log(self.friends);
     };
 
 
@@ -174,7 +173,7 @@ var Plant = function(id) {
         //         seconds         + " seconds, ",
         //         milliseconds    + " milliseconds.");
 
-        if(seconds >= WATERING_TIME) {
+        if(hours >= WATERING_TIME) {
             self.MOOD_LIST.Thirsty = true;
         }
     };

@@ -30,7 +30,6 @@ var app = {
 	},
 
 	onDeviceReady: function() {
-
 		this.initApp();
 	},
 
@@ -88,12 +87,12 @@ var app = {
 		 ***********************************/
 		console.log(">>>> Can connect to socket io?");
 		if(typeof(io) !== 'undefined') {
-			self.socket = io("http://localhost:3000");
+			self.socket = io("http://192.168.1.14:3000");
 			if(self.socket != null && self.socket != '') {
 
 				self.socket.on("connect_error", function(error){
 					console.log("Error", error);
-					self.isConnected = false;
+					self.isConnected = true;
 				});
 
 				self.socket.on("connect", function() {
