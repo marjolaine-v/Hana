@@ -1,14 +1,13 @@
 Hana
 ====
 
-A project for a javascript workshop for Gobelins School.
+An experimental project for a javascript workshop for Gobelins School. 
 
 
 Authors
 ===
 
-Marjolaine Véricel
-Maël Gonzalez
+Marjolaine Véricel & Maël Gonzalez
 
 
 Project
