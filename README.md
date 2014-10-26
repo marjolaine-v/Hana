@@ -7,7 +7,7 @@ An experimental project for a javascript workshop for Gobelins School.
 Authors
 ===
 
-Marjolaine Véricel & Maël Gonzalez
+Marjolaine Véricel & Maël Gonzalez, Gobelins students.
 
 
 Project
